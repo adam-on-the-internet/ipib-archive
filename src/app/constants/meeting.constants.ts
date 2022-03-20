@@ -9,6 +9,10 @@ export const MEETINGS: MeetingInfo[] = [
     useHost: true,
     description: null,
     date: "04/21/22",
+    youtubeLink: null,
+    hasMaterials: false,
+    hasMinutes: false,
+    hasAgenda: false,
     ipibLink: null,
   },
   {
@@ -17,6 +21,10 @@ export const MEETINGS: MeetingInfo[] = [
     useHost: true,
     description: null,
     date: "03/17/22",
+    youtubeLink: null,
+    hasMaterials: false,
+    hasMinutes: false,
+    hasAgenda: false,
     ipibLink: "ipib-board-meeting-59",
   },
   {
@@ -28,6 +36,7 @@ export const MEETINGS: MeetingInfo[] = [
     hasMaterials: true,
     hasMinutes: true,
     hasAgenda: true,
+    youtubeLink: null,
     ipibLink: "ipib-board-meeting-electronic-meeting-14",
   },
   {
@@ -39,6 +48,7 @@ export const MEETINGS: MeetingInfo[] = [
     hasMaterials: true,
     hasMinutes: true,
     hasAgenda: true,
+    youtubeLink: null,
     ipibLink: "ipib-board-meeting-58",
   },
 ];

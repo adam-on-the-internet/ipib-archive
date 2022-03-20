@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {MEMBERS, STAFF} from 'src/app/constants/contacts.constants';
 
 @Component({
   selector: 'app-contact',
@@ -6,6 +7,9 @@ import {Component} from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  public contactsMDPath = `assets/contacts.md`;
-  public disclaimerMarkdownPath = `assets/disclaimer.md`;
+  public headerPath = `assets/contacts-header.md`;
+  public footerPath = `assets/contacts-footer.md`;
+  public disclaimerPath = `assets/disclaimer.md`;
+  public members = MEMBERS;
+  public staff = STAFF;
 }

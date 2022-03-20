@@ -2,6 +2,7 @@
 
 - finish meetings for 1,2,3 of 2022
     - how to add recordings to youtube?
+    - what to do with raw mp3? google drive?
 - better flesh out the contacts
 - add more news
 - add more meetings

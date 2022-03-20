@@ -1,11 +1,39 @@
 <div class="container">
   <div class="row my-3">
     <div class="col-md-12">
-      <markdown [src]="contactsMDPath"></markdown>
+      <markdown [src]="headerPath"></markdown>
+    </div>
+    <div class="col-md-12 my-2">
+      <h2>Members</h2>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let person of members">
+          <strong>
+            {{person.role}}:
+          </strong>
+          {{person.name}}
+          <span *ngIf="person.subtitle">({{person.subtitle}})</span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-12 my-2">
+      <h2>Staff</h2>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let person of staff">
+          <strong>
+            {{person.role}}:
+          </strong>
+          {{person.name}}
+          <span *ngIf="person.subtitle">({{person.subtitle}})</span>
+        </li>
+      </ul>
     </div>
     <div class="col-md-12">
       <hr>
-      <markdown [src]="disclaimerMarkdownPath"></markdown>
+      <markdown [src]="footerPath"></markdown>
+    </div>
+    <div class="col-md-12">
+      <hr>
+      <markdown [src]="disclaimerPath"></markdown>
     </div>
   </div>
 </div>
