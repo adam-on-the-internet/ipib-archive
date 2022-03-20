@@ -6,3 +6,11 @@ export interface DocumentInfo {
   type?: string;
   useHost?: boolean;
 }
+
+export interface MeetingInfo extends DocumentInfo {
+  ipibLink?: string;
+  hasRecording?: boolean;
+  hasMinutes?: boolean;
+  hasAgenda?: boolean;
+  hasMaterials?: boolean;
+}

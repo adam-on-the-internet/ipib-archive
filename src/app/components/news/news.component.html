@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row my-3">
+    <div class="col-md-12">
+      <markdown [src]="newsMDPath"></markdown>
+    </div>
+    <div class="col-md-12">
+      <hr>
+      <p *ngIf="NEWS.length === 0">
+        Sorry, no articles to show.
+      </p>
+      <ng-container *ngIf="NEWS.length > 0">
+        <p>
+          Showing {{NEWS.length}} article(s)...
+        </p>
+        <ul class="list-group">
+          <li class="list-group-item border-dark" *ngFor="let article of NEWS">
+            <p>
+              <span>
+                {{article.date}}
+              </span>
+              <a href="{{article.link}}" target="_blank" class="btn btn-link">
+                {{article.name}}
+              </a>
+            </p>
+            <ng-container *ngIf="article.description">
+              <p>
+                {{article.description}}
+              </p>
+            </ng-container>
+          </li>
+        </ul>
+      </ng-container>
+    </div>
+  </div>
+</div>

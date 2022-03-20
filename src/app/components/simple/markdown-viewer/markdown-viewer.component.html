@@ -3,6 +3,35 @@
     <div class="col-md-12">
       <ng-container *ngIf="ready; else loading">
         <div class="my-3">
+
+          <section id="agenda-extensions" *ngIf="isMeeting && meetingInfo">
+            <p>
+              Meeting Information for: {{meetingInfo.name}}
+              <!--              <ng-container *ngIf="meetingInfo.hasRecording">-->
+              <!--                |-->
+              <!--                <a href="{{recordingLink}}" target="_blank"><i class="fa fa-volume-up"></i> Recording MP3 File</a>-->
+              <!--              </ng-container>-->
+              <ng-container *ngIf="meetingInfo.hasMaterials">
+                |
+                <a href="{{materialsLink}}" target="_blank"><i class="fa fa-file-pdf-o"></i> Meeting Materials</a>
+              </ng-container>
+              <ng-container *ngIf="meetingInfo.ipibLink">
+                |
+                <a href="{{ipibLink}}" target="_blank"><i class="fa fa-bank"></i> IPIB Page</a>
+              </ng-container>
+            </p>
+            <div class="alert alert-info" *ngIf="missingAny">
+              Contents not yet added:
+              <ul>
+                <li *ngIf="!meetingInfo.hasAgenda">Agenda</li>
+                <li *ngIf="!meetingInfo.hasMaterials">Materials</li>
+                <li *ngIf="!meetingInfo.hasRecording">Recording</li>
+                <li *ngIf="!meetingInfo.hasMinutes">Minutes</li>
+              </ul>
+            </div>
+            <hr>
+          </section>
+
           <markdown [src]="fullPath"></markdown>
           <section id="disclaimer">
             <hr>

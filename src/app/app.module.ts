@@ -31,6 +31,8 @@ import {ModalBoxBasicComponent} from "./components/simple/modal-box-basic/modal-
 import {MarkdownViewerComponent} from "./components/simple/markdown-viewer/markdown-viewer.component";
 import {AboutComponent} from './components/about/about.component';
 import {DirectoryComponent} from './components/directory/directory.component';
+import {ContactComponent} from './components/contact/contact.component';
+import {NewsComponent} from './components/news/news.component';
 
 // function that returns `MarkedOptions` with renderer override
 export function markedOptionsFactory(): MarkedOptions {
@@ -77,6 +79,8 @@ export function markedOptionsFactory(): MarkedOptions {
     MarkdownViewerComponent,
     AboutComponent,
     DirectoryComponent,
+    ContactComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,

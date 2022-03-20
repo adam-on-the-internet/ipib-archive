@@ -1,3 +1,3 @@
 # About the IPIB Archive
 
-More info coming soon...
+An archive of IPIB Information, primarily recordings, minutes, and agendas for IPIB meetings.

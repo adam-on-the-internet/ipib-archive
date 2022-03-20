@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {DOCUMENTS} from "../../constants/document.constants";
-import {DocumentInfo} from "../../models/general/DocumentInfo.model";
+import {MEETINGS} from "../../constants/meeting.constants";
+import {DocumentInfo, MeetingInfo} from "../../models/general/DocumentInfo.model";
 
 @Component({
   selector: 'app-directory',
@@ -9,14 +9,14 @@ import {DocumentInfo} from "../../models/general/DocumentInfo.model";
 })
 export class DirectoryComponent {
   public directoryHeaderMarkdownPath = `assets/directory-header.md`;
-  public documents: DocumentInfo[] = DOCUMENTS;
+  public meetings: MeetingInfo[] = MEETINGS;
 
   public getLink(doc: DocumentInfo): string {
     if (doc.useHost) {
       if (location.hostname === "localhost") {
-      return `http://localhost:4200/#/${doc.link}`
+        return `http://localhost:4200/#/${doc.link}`
       } else {
-        return `https://iowapublicinformationboardarchive.netlify.app/#/${doc.link}`
+        return `https://ipib-archive.netlify.app/#/${doc.link}`
       }
     } else {
       return `/assets/${doc.link}`

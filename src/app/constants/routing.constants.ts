@@ -6,4 +6,6 @@ export const enum ROUTES_ENUM {
   Document = "document",
   MarkdownViewer = "view",
   About = "about",
+  News = "news",
+  Contacts = "contacts",
 }

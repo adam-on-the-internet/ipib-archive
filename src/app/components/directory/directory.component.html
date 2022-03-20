@@ -7,25 +7,27 @@
   <div class="row my-3">
     <div class="col-md-12">
       <hr>
-      <p *ngIf="documents.length === 0">
-        Sorry, no documents to show.
+      <p *ngIf="meetings.length === 0">
+        Sorry, no meetings to show.
       </p>
-      <ng-container *ngIf="documents.length > 0">
+      <ng-container *ngIf="meetings.length > 0">
         <p>
-          Showing {{documents.length}} document(s)...
+          Showing {{meetings.length}} meeting(s)...
         </p>
         <ul class="list-group">
-          <li class="list-group-item border-dark" *ngFor="let document of documents">
-            <a href="{{getLink(document)}}" target="_blank" class="btn btn-link">
+          <li class="list-group-item border-dark" *ngFor="let meeting of meetings">
+            <a href="{{getLink(meeting)}}" target="_blank" class="btn btn-link">
               <h4>
-                {{document.name}}
+                {{meeting.name}}
               </h4>
             </a>
             <span>
-              {{document.date}}
+              {{meeting.date}}
             </span>
-            <br>
-            {{document.description}}
+            <ng-container *ngIf="meeting.description">
+              <br>
+              {{meeting.description}}
+            </ng-container>
           </li>
         </ul>
       </ng-container>
