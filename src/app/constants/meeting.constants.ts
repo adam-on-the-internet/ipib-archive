@@ -21,10 +21,10 @@ export const MEETINGS: MeetingInfo[] = [
     useHost: true,
     description: null,
     date: "03/17/22",
-    youtubeLink: null,
+    youtubeLink: "https://youtu.be/-NqrqlIT68k",
     hasMaterials: false,
     hasMinutes: false,
-    hasAgenda: false,
+    hasAgenda: true,
     ipibLink: "ipib-board-meeting-59",
   },
   {
