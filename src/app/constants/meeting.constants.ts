@@ -36,7 +36,7 @@ export const MEETINGS: MeetingInfo[] = [
     hasMaterials: true,
     hasMinutes: true,
     hasAgenda: true,
-    youtubeLink: null,
+    youtubeLink: "https://youtu.be/jj1Fpmwqw1c",
     ipibLink: "ipib-board-meeting-electronic-meeting-14",
   },
   {
