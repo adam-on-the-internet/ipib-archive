@@ -10,7 +10,7 @@ describe("workspace-project App", () => {
 
   it("should display welcome message", () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual("DSM Document Archive");
+    expect(page.getTitleText()).toEqual("IPIB Archive");
   });
 
   afterEach(async () => {
