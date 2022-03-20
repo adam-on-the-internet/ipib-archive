@@ -9,6 +9,7 @@ export interface DocumentInfo {
 
 export interface MeetingInfo extends DocumentInfo {
   ipibLink?: string;
+  youtubeLink?: string;
   hasRecording?: boolean;
   hasMinutes?: boolean;
   hasAgenda?: boolean;

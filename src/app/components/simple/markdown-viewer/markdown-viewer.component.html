@@ -3,14 +3,24 @@
     <div class="col-md-12">
       <ng-container *ngIf="ready; else loading">
         <div class="my-3">
-
           <section id="agenda-extensions" *ngIf="isMeeting && meetingInfo">
             <p>
-              Meeting Information for: {{meetingInfo.name}}
+              Meeting Information for
+              <a href="{{overviewLink}}">
+                {{meetingInfo.name}}
+              </a>
               <!--              <ng-container *ngIf="meetingInfo.hasRecording">-->
               <!--                |-->
               <!--                <a href="{{recordingLink}}" target="_blank"><i class="fa fa-volume-up"></i> Recording MP3 File</a>-->
               <!--              </ng-container>-->
+              <ng-container *ngIf="meetingInfo.hasAgenda">
+                |
+                <a href="{{agendaLink}}"><i class="fa fa-sticky-note"></i> Agenda</a>
+              </ng-container>
+              <ng-container *ngIf="meetingInfo.hasMinutes">
+                |
+                <a href="{{minutesLink}}"><i class="fa fa-clock-o"></i> Minutes</a>
+              </ng-container>
               <ng-container *ngIf="meetingInfo.hasMaterials">
                 |
                 <a href="{{materialsLink}}" target="_blank"><i class="fa fa-file-pdf-o"></i> Meeting Materials</a>
@@ -25,7 +35,7 @@
               <ul>
                 <li *ngIf="!meetingInfo.hasAgenda">Agenda</li>
                 <li *ngIf="!meetingInfo.hasMaterials">Materials</li>
-                <li *ngIf="!meetingInfo.hasRecording">Recording</li>
+                <li *ngIf="!meetingInfo.youtubeLink">Recording</li>
                 <li *ngIf="!meetingInfo.hasMinutes">Minutes</li>
               </ul>
             </div>

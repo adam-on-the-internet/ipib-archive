@@ -29,15 +29,23 @@ export class MarkdownViewerComponent implements OnInit {
   }
 
   public get missingAny(): boolean {
-    return !this.meetingInfo.hasMaterials || !this.meetingInfo.hasRecording || !this.meetingInfo.hasAgenda || !this.meetingInfo.hasMinutes;
-  }
-
-  public get recordingLink(): string {
-    return `${this.meetingBaseLink}/recording.MP3`;
+    return !this.meetingInfo.hasMaterials || !this.meetingInfo.youtubeLink || !this.meetingInfo.hasAgenda || !this.meetingInfo.hasMinutes;
   }
 
   public get materialsLink(): string {
     return `${this.meetingBaseLink}/materials.pdf`;
+  }
+
+  public get agendaLink(): string {
+    return `/#/view/meetings~${this.meetingCode}~agenda`;
+  }
+
+  public get minutesLink(): string {
+    return `/#/view/meetings~${this.meetingCode}~minutes`;
+  }
+
+  public get overviewLink(): string {
+    return `/#/view/meetings~${this.meetingCode}~info`;
   }
 
   public get meetingBaseLink(): string {
@@ -50,7 +58,7 @@ export class MarkdownViewerComponent implements OnInit {
 
   public get meetingInfo(): MeetingInfo {
     return MEETINGS.find((meeting) => {
-      return meeting.link.includes(this.rawPath);
+      return meeting.link.includes(`meetings~${this.meetingCode}`);
     });
   }
 
