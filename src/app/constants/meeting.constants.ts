@@ -26,6 +26,8 @@ export const MEETINGS: MeetingInfo[] = [
     description: null,
     date: "02/17/22",
     hasMaterials: true,
+    hasMinutes: true,
+    hasAgenda: true,
     ipibLink: "ipib-board-meeting-electronic-meeting-14",
   },
   {
