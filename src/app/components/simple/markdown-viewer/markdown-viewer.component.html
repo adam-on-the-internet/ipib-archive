@@ -9,10 +9,10 @@
               <a href="{{overviewLink}}">
                 {{meetingInfo.name}}
               </a>
-              <!--              <ng-container *ngIf="meetingInfo.hasRecording">-->
-              <!--                |-->
-              <!--                <a href="{{recordingLink}}" target="_blank"><i class="fa fa-volume-up"></i> Recording MP3 File</a>-->
-              <!--              </ng-container>-->
+              <ng-container *ngIf="meetingInfo.youtubeLink">
+                |
+                <a href="{{meetingInfo.youtubeLink}}" target="_blank"><i class="fa fa-youtube"></i> Recording</a>
+              </ng-container>
               <ng-container *ngIf="meetingInfo.hasAgenda">
                 |
                 <a href="{{agendaLink}}"><i class="fa fa-sticky-note"></i> Agenda</a>
