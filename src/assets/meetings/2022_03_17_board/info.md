@@ -8,7 +8,3 @@
     - Des Moines, IA 50319
 - Related Articles: 
     - [Iowa Capital Dispatch: Board dismisses complaint over deleted cellphone texts](https://iowacapitaldispatch.com/2022/03/17/board-dismisses-complaint-over-deleted-cellphone-texts/?fbclid=IwAR1U2QdNPKbn58iHhzaGbVCX2JUiHSABR_-BJC_ZBqi5W66eMoqZ_HTfRCc)
-
-## Notes
-
-n/a

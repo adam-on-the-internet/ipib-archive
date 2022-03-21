@@ -16,14 +16,16 @@
         </p>
         <ul class="list-group">
           <li class="list-group-item border-dark" *ngFor="let meeting of meetings">
-            <a href="{{getLink(meeting)}}" class="btn btn-link">
-              <h4>
-                {{meeting.name}}
-              </h4>
-            </a>
             <span>
               {{meeting.date}}
             </span>
+            <span *ngIf="meeting.isUpcoming">
+              (Upcoming)
+            </span>
+            <a href="{{getLink(meeting)}}" class="btn btn-link">
+              {{meeting.name}}
+            </a>
+
             <ng-container *ngIf="meeting.description">
               <br>
               {{meeting.description}}

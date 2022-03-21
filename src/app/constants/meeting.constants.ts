@@ -14,6 +14,7 @@ export const MEETINGS: MeetingInfo[] = [
     hasMinutes: false,
     hasAgenda: false,
     ipibLink: null,
+    isUpcoming: true,
   },
   {
     name: "IPIB Board Meeting 03/17/22",
@@ -21,7 +22,7 @@ export const MEETINGS: MeetingInfo[] = [
     useHost: true,
     description: null,
     date: "03/17/22",
-    youtubeLink: "https://youtu.be/-NqrqlIT68k",
+    youtubeLink: "-NqrqlIT68k",
     hasMaterials: false,
     hasMinutes: false,
     hasAgenda: true,
@@ -36,7 +37,7 @@ export const MEETINGS: MeetingInfo[] = [
     hasMaterials: true,
     hasMinutes: true,
     hasAgenda: true,
-    youtubeLink: "https://youtu.be/jj1Fpmwqw1c",
+    youtubeLink: "jj1Fpmwqw1c",
     ipibLink: "ipib-board-meeting-electronic-meeting-14",
   },
   {
@@ -48,7 +49,7 @@ export const MEETINGS: MeetingInfo[] = [
     hasMaterials: true,
     hasMinutes: true,
     hasAgenda: true,
-    youtubeLink: null,
+    youtubeLink: "w9Fx5yeRvPQ",
     ipibLink: "ipib-board-meeting-58",
   },
 ];

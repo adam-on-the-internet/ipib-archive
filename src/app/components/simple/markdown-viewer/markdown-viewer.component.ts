@@ -2,6 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 import {MeetingInfo} from "../../../models/general/DocumentInfo.model";
 import {MEETINGS} from "../../../constants/meeting.constants";
+import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
 
 @Component({
   selector: "app-markdown-viewer",
@@ -34,6 +35,11 @@ export class MarkdownViewerComponent implements OnInit {
 
   public get materialsLink(): string {
     return `${this.meetingBaseLink}/materials.pdf`;
+  }
+
+  public get embedYoutubeLink(): SafeResourceUrl {
+    const url = `https://www.youtube.com/embed/${this.meetingInfo.youtubeLink}`;
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   public get agendaLink(): string {
@@ -69,6 +75,7 @@ export class MarkdownViewerComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private sanitizer: DomSanitizer
   ) {
   }
 

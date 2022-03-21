@@ -13,4 +13,5 @@ export interface MeetingInfo extends DocumentInfo {
   hasMinutes?: boolean;
   hasAgenda?: boolean;
   hasMaterials?: boolean;
+  isUpcoming?: boolean;
 }
