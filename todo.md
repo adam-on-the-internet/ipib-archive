@@ -1,8 +1,6 @@
 # TODO
 
 - finish meetings for 1,2,3 of 2022
-    - what to do with raw mp3? google drive?
-    - meeting 3 still needs minutes
     - any notes?
 - better flesh out the contacts
     - add more contact info
