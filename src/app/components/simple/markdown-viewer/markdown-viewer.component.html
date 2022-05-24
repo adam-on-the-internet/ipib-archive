@@ -13,9 +13,9 @@
                 |
                 <a href="{{agendaLink}}"><i class="fa fa-sticky-note"></i> Agenda</a>
               </ng-container>
-              <ng-container *ngIf="meetingInfo.hasMaterials">
+              <ng-container *ngIf="meetingInfo.hasAgendaPDF">
                 |
-                <a href="{{materialsLink}}" target="_blank"><i class="fa fa-file-pdf-o"></i> Meeting Materials</a>
+                <a href="{{agendaPDFLink}}" target="_blank"><i class="fa fa-file-pdf-o"></i> Agenda (PDF)</a>
               </ng-container>
               <ng-container *ngIf="meetingInfo.ipibLink">
                 |
@@ -42,7 +42,6 @@
               Contents not yet added:
               <ul>
                 <li *ngIf="!meetingInfo.hasAgenda">Agenda</li>
-                <li *ngIf="!meetingInfo.hasMaterials">Materials</li>
                 <li *ngIf="!meetingInfo.youtubeLink">Recording</li>
                 <li *ngIf="!meetingInfo.hasMinutes">Minutes</li>
               </ul>

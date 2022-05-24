@@ -33,8 +33,8 @@ export class MarkdownViewerComponent implements OnInit {
     return missingAny(this.meetingInfo);
   }
 
-  public get materialsLink(): string {
-    return `${this.meetingBaseLink}/materials.pdf`;
+  public get agendaPDFLink(): string {
+    return `${this.meetingBaseLink}/agenda.pdf`;
   }
 
   public get minutesPDF(): string {

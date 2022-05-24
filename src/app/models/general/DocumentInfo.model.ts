@@ -13,10 +13,11 @@ export interface MeetingInfo extends DocumentInfo {
   hasMinutes?: boolean;
   hasMinutesPDF?: boolean;
   hasAgenda?: boolean;
+  hasAgendaPDF?: boolean;
   hasMaterials?: boolean;
   isUpcoming?: boolean;
 }
 
 export function missingAny(meetingInfo: MeetingInfo): boolean {
-  return !meetingInfo.hasMaterials || !meetingInfo.youtubeLink || !meetingInfo.hasAgenda || !meetingInfo.hasMinutes;
+  return !meetingInfo.youtubeLink || !meetingInfo.hasAgenda || !meetingInfo.hasMinutes;
 }
