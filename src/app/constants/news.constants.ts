@@ -22,6 +22,12 @@ export const NEWS: DocumentInfo[] = [
     date: "02/09/2022",
   },
   {
+    name: "Adam Klein v. Iowa Public Information Board and Burlington Police Department and Iowa Department of Public Safety, Division of Criminal Investigations, 20-0657",
+    link: "https://www.courtlistener.com/opinion/5313012/adam-klein-v-iowa-public-information-board-and-burlington-police/",
+    description: "Court Documents about case involving IPIB.",
+    date: "12/30/21",
+  },
+  {
     name: "State board rules IDPH violated records law, but dismisses complaint",
     link: "https://iowacapitaldispatch.com/2021/08/19/state-board-rules-idph-violated-records-law-but-dismisses-complaint/?fbclid=IwAR3yxEhCkyYfK9A7fAOUkH14vLLFFDPIef64DyC1tPH-NvJal80_0Q4sUms",
     description: "The Iowa Public Information Board on Thursday ruled that there was “probable cause” to believe the state health department violated the state’s open records law, then dismissed the complaint anyway.",
