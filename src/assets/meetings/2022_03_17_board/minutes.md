@@ -37,7 +37,7 @@ Brick, Matthew (22AO:0002 – Chapter 22 – 1/31/22). A motion by Luchtel and s
 1. Abell, Ernie (22FC:0004 – Chapter 22 – Arispe City Council 12/14/21) Ernie Abell was present on the matter. A motion by Lindahl and second by Giovannetti to consolidate with 21FC:0119.  Unanimously approved, 7-0.
 2. Byars, William (21FC:0081 – Chapter 21 – Adair City Council 8/22/21) A motion by Lindahl and second by Luchtel to accept the informal resolution. Unanimously approved 7-0.
 3. Evans, Randy (22FC:0007 – Chapter 22 – Fayette County 2/16/22). Randy Evans and Jeff Hoeger were present on this matter. A motion by McHugh and second by Giovannetti to table this complaint until next month at which time Mr. Sauer will be asked to appear before the Board. Unanimously approved 7-0.
-    -Morain joined the meeting @2:20 pm
+    - Morain joined the meeting @2:20 pm
     - Stewart left the meeting @2:22 pm
 4. Grassi, Brian (22FC:0002 – Chapter 22 – City of West Liberty 1/12/22) A motion by Lindahl and second by Luchtel to approve the dismissal order.  Unanimously approved, 7-0.
 5. Kauffman, Clark (21FC:0064 – Chapter 22 – Iowa Workforce Development 7/13/21) Clark Kauffman, David Steen were present on the matter. A motion by McHugh and second by Lindahl that probable cause exists to believe a violation occurred and dismiss the complaint as an exercise of administrative discretion.  Approved 4-3 with Lindahl, Luchtel, McHugh, and Pottorff voting yea; Corbin, Giovannetti, and Morain voting nay.

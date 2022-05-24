@@ -11,6 +11,7 @@ export interface MeetingInfo extends DocumentInfo {
   ipibLink?: string;
   youtubeLink?: string;
   hasMinutes?: boolean;
+  hasMinutesPDF?: boolean;
   hasAgenda?: boolean;
   hasMaterials?: boolean;
   isUpcoming?: boolean;

@@ -5,7 +5,7 @@
         <div class="my-3">
           <section id="agenda-extensions" *ngIf="isMeeting && meetingInfo">
             <p>
-              Meeting Information for
+              Meeting Info for
               <a href="{{overviewLink}}">
                 {{meetingInfo.name}}
               </a>
@@ -24,6 +24,10 @@
               <ng-container *ngIf="meetingInfo.hasMinutes">
                 |
                 <a href="{{minutesLink}}"><i class="fa fa-clock-o"></i> Minutes</a>
+              </ng-container>
+              <ng-container *ngIf="meetingInfo.hasMinutesPDF">
+                |
+                <a href="{{minutesPDF}}" target="_blank"><i class="fa fa-file-pdf-o"></i> Meeting Minutes (PDF)</a>
               </ng-container>
               <ng-container *ngIf="meetingInfo.youtubeLink">
                 |

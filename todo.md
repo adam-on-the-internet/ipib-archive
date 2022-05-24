@@ -1,7 +1,5 @@
 # TODO
 
-- finish meetings for 1,2,3 of 2022
-    - any notes?
 - better flesh out the contacts
     - add more contact info
 - add more news
