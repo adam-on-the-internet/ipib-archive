@@ -22,7 +22,7 @@ export const MEETINGS: MeetingInfo[] = [
     useHost: true,
     description: null,
     date: "05/19/22",
-    youtubeLink: null,
+    youtubeLink: "T_WQmd8rt8E",
     hasMaterials: false,
     hasMinutes: true,
     hasMinutesPDF: true,
