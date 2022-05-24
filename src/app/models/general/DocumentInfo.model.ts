@@ -16,3 +16,7 @@ export interface MeetingInfo extends DocumentInfo {
   hasMaterials?: boolean;
   isUpcoming?: boolean;
 }
+
+export function missingAny(meetingInfo: MeetingInfo): boolean {
+  return !meetingInfo.hasMaterials || !meetingInfo.youtubeLink || !meetingInfo.hasAgenda || !meetingInfo.hasMinutes;
+}

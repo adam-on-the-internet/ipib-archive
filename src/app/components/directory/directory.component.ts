@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {MEETINGS} from "../../constants/meeting.constants";
-import {DocumentInfo, MeetingInfo} from "../../models/general/DocumentInfo.model";
+import {DocumentInfo, MeetingInfo, missingAny} from "../../models/general/DocumentInfo.model";
 
 @Component({
   selector: 'app-directory',
@@ -14,12 +14,16 @@ export class DirectoryComponent {
   public getLink(doc: DocumentInfo): string {
     if (doc.useHost) {
       if (location.hostname === "localhost") {
-        return `http://localhost:4200/#/${doc.link}`
+        return `http://localhost:4200/#/${doc.link}`;
       } else {
-        return `https://ipib-archive.netlify.app/#/${doc.link}`
+        return `https://ipib-archive.netlify.app/#/${doc.link}`;
       }
     } else {
-      return `/assets/${doc.link}`
+      return `/assets/${doc.link}`;
     }
+  }
+
+  public missingAny(meetingInfo: MeetingInfo): boolean {
+    return missingAny(meetingInfo);
   }
 }

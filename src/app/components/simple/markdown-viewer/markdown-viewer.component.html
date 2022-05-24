@@ -35,6 +35,9 @@
                   Recording</a>
               </ng-container>
             </p>
+            <div class="alert alert-info" *ngIf="meetingInfo.isUpcoming">
+              This meeting is upcoming, check back later for more information.
+            </div>
             <div class="alert alert-warning" *ngIf="missingAny">
               Contents not yet added:
               <ul>
@@ -43,9 +46,6 @@
                 <li *ngIf="!meetingInfo.youtubeLink">Recording</li>
                 <li *ngIf="!meetingInfo.hasMinutes">Minutes</li>
               </ul>
-            </div>
-            <div class="alert alert-info" *ngIf="meetingInfo.isUpcoming">
-              This meeting is upcoming, check back later for more information.
             </div>
             <iframe *ngIf="meetingInfo.youtubeLink"
                     width="560"

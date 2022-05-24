@@ -1,6 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
-import {MeetingInfo} from "../../../models/general/DocumentInfo.model";
+import {MeetingInfo, missingAny} from "../../../models/general/DocumentInfo.model";
 import {MEETINGS} from "../../../constants/meeting.constants";
 import {DomSanitizer, SafeResourceUrl} from "@angular/platform-browser";
 
@@ -30,7 +30,7 @@ export class MarkdownViewerComponent implements OnInit {
   }
 
   public get missingAny(): boolean {
-    return !this.meetingInfo.hasMaterials || !this.meetingInfo.youtubeLink || !this.meetingInfo.hasAgenda || !this.meetingInfo.hasMinutes;
+    return missingAny(this.meetingInfo);
   }
 
   public get materialsLink(): string {

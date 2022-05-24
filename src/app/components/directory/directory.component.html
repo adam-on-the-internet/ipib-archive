@@ -19,12 +19,16 @@
             <span>
               {{meeting.date}}
             </span>
-            <span *ngIf="meeting.isUpcoming">
-              (Upcoming)
-            </span>
             <a href="{{getLink(meeting)}}" class="btn btn-link">
               {{meeting.name}}
             </a>
+
+            <span *ngIf="meeting.isUpcoming">
+              (Upcoming)
+            </span>
+            <span *ngIf="!meeting.isUpcoming && missingAny(meeting)">
+              (Missing some contents)
+            </span>
 
             <ng-container *ngIf="meeting.description">
               <br>
