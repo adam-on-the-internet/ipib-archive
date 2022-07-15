@@ -4,6 +4,12 @@ import {DocumentInfo} from "../models/general/DocumentInfo.model";
 
 export const NEWS: DocumentInfo[] = [
   {
+    name: "IPIB Drafts New Open Recrods Exemptions",
+    link: "https://www.bleedingheartland.com/2022/07/14/transparency-advocates-sound-alarm-about-draft-open-records-rules/",
+    description: "Longtime advocates for access to public records in Iowa expressed concern about new administrative rules proposed by the Iowa Public Information Board.",
+    date: "07/15/2022",
+  },
+  {
     name: "IPIB dismisses Mills County public records case ",
     link: "https://www.kmaland.com/news/ipib-dismisses-mills-county-public-records-case/article_2928846a-a6da-11ec-99b7-23a90736bd67.html",
     description: "An Iowa board has dismissed a public records case regarding multiple Mill County officials.",
