@@ -4,6 +4,12 @@ import {DocumentInfo} from "../models/general/DocumentInfo.model";
 
 export const NEWS: DocumentInfo[] = [
   {
+    name: "Board to scrap proposed open records rules, for now",
+    link: "https://www.bleedingheartland.com/2022/07/21/board-to-scrap-proposed-open-records-rules-for-now/",
+    description: "IPIB will not move forward with proposed administrative rules regard requests for now.",
+    date: "07/21/2022",
+  },
+  {
     name: "IPIB Drafts New Open Recrods Exemptions",
     link: "https://www.bleedingheartland.com/2022/07/14/transparency-advocates-sound-alarm-about-draft-open-records-rules/",
     description: "Longtime advocates for access to public records in Iowa expressed concern about new administrative rules proposed by the Iowa Public Information Board.",
