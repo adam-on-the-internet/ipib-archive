@@ -41,6 +41,10 @@ export class MarkdownViewerComponent implements OnInit {
     return `${this.meetingBaseLink}/minutes.pdf`;
   }
 
+  public get showYouTube(): boolean {
+    return this.meetingInfo.youtubeLink && this.fullPath.endsWith("/info.md");
+  }
+
   public get embedYoutubeLink(): SafeResourceUrl {
     const url = `https://www.youtube.com/embed/${this.meetingInfo.youtubeLink}`;
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);

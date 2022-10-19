@@ -46,7 +46,7 @@
                 <li *ngIf="!meetingInfo.hasMinutes && !meetingInfo.areMinutesExempt">Minutes</li>
               </ul>
             </div>
-            <iframe *ngIf="meetingInfo.youtubeLink"
+            <iframe *ngIf="showYouTube"
                     width="560"
                     height="315"
                     [src]="embedYoutubeLink"
