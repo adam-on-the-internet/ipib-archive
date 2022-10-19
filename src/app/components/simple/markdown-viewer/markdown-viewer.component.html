@@ -43,7 +43,7 @@
               <ul>
                 <li *ngIf="!meetingInfo.hasAgenda">Agenda</li>
                 <li *ngIf="!meetingInfo.youtubeLink">Recording</li>
-                <li *ngIf="!meetingInfo.hasMinutes">Minutes</li>
+                <li *ngIf="!meetingInfo.hasMinutes && !meetingInfo.areMinutesExempt">Minutes</li>
               </ul>
             </div>
             <iframe *ngIf="meetingInfo.youtubeLink"
