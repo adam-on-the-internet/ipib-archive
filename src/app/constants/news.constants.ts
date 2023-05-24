@@ -4,6 +4,18 @@ import {DocumentInfo} from "../models/general/DocumentInfo.model";
 
 export const NEWS: DocumentInfo[] = [
   {
+    name: "IPIB Blocks Release of DMPD Bodycam Video",
+    link: "https://twitter.com/DMRegister/status/1661009118482804736?s=20",
+    description: "IPIB blocks release of video from controversial shooting of a 16-year old by DMPD.",
+    date: "05/23/2023",
+  },
+  {
+    name: "IPIB has a new executive director",
+    link: "https://iowacapitaldispatch.com/2023/03/29/iowa-public-information-board-has-a-new-executive-director/",
+    description: "In 2022, the IPIB staff processed 131 formal complaints and 130 informal complaints. The board did not initiate any contested cases in 2022, 2021, 2020 and 2019.",
+    date: "03/29/2023",
+  },
+  {
     name: "Board to scrap proposed open records rules, for now",
     link: "https://www.bleedingheartland.com/2022/07/21/board-to-scrap-proposed-open-records-rules-for-now/",
     description: "IPIB will not move forward with proposed administrative rules regard requests for now.",
